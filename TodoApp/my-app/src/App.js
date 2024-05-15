@@ -34,7 +34,7 @@ state={
 }
 	markComplete= (id) => {
 		this.setState({todos:this.state.todos.map(todo=>{
-			if(todo.id==id){
+			if(todo.id===id){
 				todo.complete=!todo.complete
 			}
 			return todo;
